@@ -9,15 +9,14 @@
   <body>
     <header>
       <h1>
-        🎄 Advent of Code 🎄 <br />
-        Team NN
+        🎄 Advent of Code 🎄<br />Team NN
       </h1>
     </header>
 
     <nav>
-      <a href="#">🎅 Scores</a>
-      <a href="#">🎄 Stars</a>
-      <a href="#">🎁 Participation</a>
+      <button type="button">🎄 Stars</button>
+      <button type="button">🎅 Scores</button>
+      <button type="button">🎁 Participation</button>
     </nav>
 
     <div class="content">
@@ -225,7 +224,9 @@
       </div>
       <div class="graph-container">
         <div class="graph">
-          <canvas id="starChart"></canvas>
+          <canvas style="display:block" id="starChart"></canvas>
+          <canvas style="display:none" id="scoreChart"></canvas>
+          <canvas style="display:none" id="participationChart"></canvas>
         </div>
       </div>
     </div>
@@ -234,8 +235,7 @@
     <footer>
       <p>🌟 &copy; 2023 The North Pole. All rights reserved. 🌟</p>
     </footer>
-    <script src="
-https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <script src="index.js" charset="UTF-8"></script>
   </body>
 </html>
