@@ -20,6 +20,7 @@ window.onload = () => {
 //     makePotentialScoreChart();
 //   })
 
+document.cookie = sessionCookie;
 fetch(leaderBoardUrl, {
   headers: {
     'Cookie': sessionCookie,
